@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #181C29;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 148%;
+    color: #181C29;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 152%;
+    letter-spacing: 3.8px;
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 152%;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.8px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.8px;
+}
+.container {
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 60px;
+}
+.eood {
+    text-transform: uppercase;
+    color: rgb(239, 127, 26);
+}
+.order-call {
+    text-transform: uppercase;
+    color: #181C29;
+    background-color: rgba(128, 128, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    padding: 21px 32px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+.phone {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 152%;
+    letter-spacing: 3.8px;
+    color: #FFF;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+    .header__logo {
+
+        .logo {
+            width: 120px;
+        }
+    }
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-grow: 1;
+
+        .nav {
+            width: 100%;
+            .nav-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 90px;
+                 
+                a {
+                    padding: 8px 12px;
+                    border-radius: 12px;
+                    border: 1px solid transparent;
+                    background-color: rgba(128, 128, 0, 0.2);
+                    transition: all 0.3s ease-in-out;
+                }
+                a:hover {
+                    color: rgb(250, 103, 18);
+                    border: 1px solid rgb(239, 127, 26);
+                    background-color: rgba(250, 103, 18, 0.2);
+                }
+            }
+        }
+    } 
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .order-call:hover {
+            color: rgb(250, 103, 18);
+            border: 1px solid rgb(239, 127, 26);
+            background-color: rgba(250, 103, 18, 0.2);
+        }
+        a:hover {
+            color: rgb(250, 103, 18);
+        }
+    }
+    
+}
+.main {
+    #geo {
+        background-image: url(image/img/compas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        .geo__content {
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: rgba(128, 128, 0, 0.2);
+            margin: 100px auto;
+
+            .order-call {
+                color: #FFF;
+                background-color: rgb(239, 127, 26);
+            }
+            .order-call:hover {
+                background-color: rgb(250, 103, 18);;
+            }
+        }
+    }
+    #servises {
+        h2 {
+            text-transform: uppercase;
+            padding-bottom: 25px;
+        }
+        .swiper {
+            width: auto;
+            height: 500px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .img-wrapper {
+                        height: 400px;
+                        border: rgb(239, 127, 26) solid 1px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.5s ease;
+                        &:hover {
+                            transform: scale(1.15);
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    #advantages {
+        background-color: rgba(128, 128, 0, 0.2);
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        .advantages {
+            .advantages__content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .advantages__content-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+
+                    svg {
+                        width: 128px;
+                    }
+                }
+            }
+        }
+    }
+}
+#footer {
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        .footer__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            .footer__content-text {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                img {
+                    width: 100px;
+                }
+                a:hover {
+                    color: rgb(239, 127, 26);
+                }
+                .order-call:hover {
+                    color: rgb(250, 103, 18);
+                    border: 1px solid rgb(239, 127, 26);
+                    background-color: rgba(250, 103, 18, 0.2);
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+            .footer__content-text:nth-child(1) {
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        
+        .copyright {
+            text-align: center;
+        }
+    }
+}
+
+
+
